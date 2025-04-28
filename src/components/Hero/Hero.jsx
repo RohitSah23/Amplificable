@@ -26,7 +26,7 @@ const Hero = () => {
             and quickly, along with expert outsourcing services to scale your
             business faster and smarter.
           </p>
-          <Button text="Learn How We Help" /> 
+          <Button text="Learn How We Help"  className="text-white" /> 
         </div>
 
         <div className="w-full md:w-1/2 p-4">

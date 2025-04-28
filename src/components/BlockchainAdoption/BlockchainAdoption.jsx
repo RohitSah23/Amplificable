@@ -5,28 +5,26 @@ import Button from "../Button/Button";
 const BlockchainAdoption = () => {
   return (
     <>
-      <div className="bg-gray-200 py-24 text-center">
-        <h1 className="text-center text-gray-800 text-xl md:text-2xl font-semibold mb-8">
+      <div className="bg-neutral-100 py-18 text-center">
+        <h1 className="text-center text-gray-800  text-4xl font-semibold mb-8">
           Simplifying Blockchain Adoption{" "}
         </h1>
-        <div>Our mission is to make blockchain accessible & impactful by</div>
-        <div>
-          guiding businesses through every step of the journey—from discovery to
-          implementation.
-        </div>
+        <div className="text-3xl font-semibold mb-2 text-neutral-500">Our mission is to make blockchain accessible & impactful by</div>
+        <div className="text-3xl font-semibold mb-8 text-neutral-500">guiding businesses through every step of the journey</div>
+         
 
-        <div className="flex justify-center gap-4 mt-8">
-          <Button text="Learn How We Help" />
-          <Button text="Book A Call" />
-        </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-4 mt-8 mb-6">
+          <Button text="Learn How We Help" className="text-white" />
+          <Button text="Book A Call" className="bg-white text-black hover:bg-gray-100 border border-gray-300" />
+          </div>
+        <div className="flex justify-center pt-8">
           <img
             src={BlockchainAdoptionImage}
             alt="BlockchainAdoptionImage"
-            className="w-full max-w-7xl px-4"
+            className="w-full px-4"
           />
         </div>
-      </div>
+        </div>
     </>
   );
 };
