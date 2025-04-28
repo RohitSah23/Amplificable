@@ -9,6 +9,9 @@ import BlockchainAdoptionImage from "./BlockchainAdoption.png";
 import Plan from "./Plan.svg";
 import Adopt from "./Adopt.svg";
 import Discover from "./Discover.svg";
+import Time from "./Time.svg";
+import Hand from "./Hand.svg";
+import Atom from "./Atom.svg";
 import Energy from "./Industries/Energy.webp";
 import Finance from "./Industries/Finance.avif";
 import GovSector from "./Industries/GovSector.webp";
@@ -50,4 +53,7 @@ export {
   AmplificableFooter,
   BG1,
   BG2,
+  Time,
+  Atom,
+  Hand,
 };
