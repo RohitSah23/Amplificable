@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../Button/Button";
 import Card from "./Card";
+import { motion } from "motion/react";
+
 import { Adopt, Discover, Plan, BG2 } from "../../assets/assets";
 
 const WhatWeOffer = () => {
@@ -30,34 +32,56 @@ const WhatWeOffer = () => {
       ></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-20">
-        <h1 className="text-center text-neutral-300 text-2xl font-semibold mb-4">
-          What We Offer?
-        </h1>
-        <div className="text-4xl md:text-5xl text-center mb-2 text-white">
-          Comprehensive Blockchain
-        </div>
-        <div className="text-4xl md:text-5xl text-center font-semibold mb-8 text-white">
-          Consulting Services
-        </div>
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h1 className="text-center text-neutral-300 text-2xl font-semibold mb-4">
+            What We Offer?
+          </h1>
+          <div className="text-4xl md:text-5xl text-center mb-2 text-white">
+            Comprehensive Blockchain
+          </div>
+          <div className="text-4xl md:text-5xl text-center font-semibold mb-8 text-white">
+            Consulting Services
+          </div>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-6">
+        <motion.div
+          className="flex flex-wrap justify-center gap-6"
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           {cardsData.map((card, index) => (
             <div
               key={index}
               className="flex flex-col flex-grow basis-full md:basis-[30%] max-w-sm"
             >
-              <Card image={card.image} heading={card.heading} text={card.text} />
+              <Card
+                image={card.image}
+                heading={card.heading}
+                text={card.text}
+              />
             </div>
           ))}
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-4 mt-12">
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-wrap justify-center gap-4 mt-12"
+        >
           <Button text="Learn How We Help" className="text-white" />
           <Button
             text="Book A Quick Call"
             className="bg-white text-black hover:bg-gray-100 border border-gray-300"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

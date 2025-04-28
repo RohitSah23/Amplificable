@@ -1,4 +1,5 @@
-import { div } from "motion/react-client";
+import { motion } from "motion/react";
+
 import React, { useState } from "react";
 
 const FAQ = () => {
@@ -43,18 +44,28 @@ const FAQ = () => {
     <div className="bg-white  flex items-center py-20">
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row px-6 md:px-12 gap-12">
         {/* Left side */}
-        <div className="flex-1 flex flex-col justify-start">
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex-1 flex flex-col justify-start"
+        >
           <h1 className="text-5xl font-bold text-black mb-6">General FAQs</h1>
           <p className="text-xl text-neutral-500 font-semibold">
-            Use premium webflow components to ship your product faster to your customers. 
-            Build better and faster with Flowspark.
+            Use premium webflow components to ship your product faster to your
+            customers. Build better and faster with Flowspark.
           </p>
-        </div>
+        </motion.div>
 
         {/* Right side */}
         <div className="flex-1 flex flex-col gap-4">
           {faqs.map((faq, index) => (
-            <div
+            <motion.div
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: false, amount: 0.4 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               key={index}
               className={`w-full rounded-lg shadow-sm border border-gray-200 ${
                 openIndex === index ? "bg-white" : "bg-gray-50"
@@ -80,7 +91,7 @@ const FAQ = () => {
                   {faq.answer}
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

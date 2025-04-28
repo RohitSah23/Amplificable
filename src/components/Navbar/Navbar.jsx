@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
   return (
-    <div className="w-1/2 mx-auto m-8 bg-white/5 backdrop-blur-2xl border border-black rounded-full py-4 px-6 shadow-md">
+    <div className="w-1/2 mx-auto mt-8 bg-white/5 backdrop-blur-2xl border border-black rounded-full py-4 px-6 shadow-md">
       <nav className="flex items-center justify-between">
         
         <div className="flex items-center">
