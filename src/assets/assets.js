@@ -1,69 +1,70 @@
-import hexaBG from "./WhyChooseBlockchain/hexaBG.svg";
-import companiesImage from "./companiesImage.webp";
-import heroImage from "./heroImage.avif";
-import image1 from "./WhyChooseBlockchain/image1.avif";
-import image3 from "./WhyChooseBlockchain/image3.avif";
-import image4 from "./WhyChooseBlockchain/image4.png";
-import image2 from "./WhyChooseBlockchain/image2.png";
-import BlockchainAdoptionImage from "./BlockchainAdoption.png";
-import Plan from "./Plan.svg";
 import Adopt from "./Adopt.svg";
-import Discover from "./Discover.svg";
-import Time from "./Time.svg";
-import Hand from "./Hand.svg";
+import Amplificable from "./Amplificable.png";
 import Atom from "./Atom.svg";
-import Energy from "./Industries/Energy.webp";
-import Finance from "./Industries/Finance.avif";
-import GovSector from "./Industries/GovSector.webp";
-import RealEstate from "./Industries/RealEstate.webp";
-import HealthCare from "./Industries/HealthCare.webp";
-import SupplyChain from "./Industries/SupplyChain.avif";
-import PoweringImage from "./PoweringImage.webp";
-import AmplificableFooter from "./AmplificableFooter.avif";
-import Blog1 from "./Blogs/Blog1.avif";
-import Blog2 from "./Blogs/Blog2.avif";
-import BlogsBG from "./Blogs/BlogsBG.svg";
 import BG1 from "./BG1.svg";
 import BG2 from "./BG2.svg";
 import BGHexa from "./BGHexa.svg";
+import BlockchainAdoptionImage from "./BlockchainAdoption.png";
+import Blog1 from "./Blogs/Blog1.avif";
+import Blog2 from "./Blogs/Blog2.avif";
+import BlogsBG from "./Blogs/BlogsBG.svg";
+import companiesImage from "./companiesImage.webp";
+import Discover from "./Discover.svg";
+import Energy from "./Industries/Energy.webp";
+import Finance from "./Industries/Finance.avif";
+import FooterLogo from "./FooterLogo.svg";
+import GovSector from "./Industries/GovSector.webp";
+import Hand from "./Hand.svg";
+import hexaBG from "./WhyChooseBlockchain/hexaBG.svg";
+import HealthCare from "./Industries/HealthCare.webp";
+import heroImage from "./heroImage.avif";
+import HeroArrow from "./HeroArrow.svg";
+import image1 from "./WhyChooseBlockchain/image1.avif";
+import image2 from "./WhyChooseBlockchain/image2.png";
+import image3 from "./WhyChooseBlockchain/image3.avif";
+import image4 from "./WhyChooseBlockchain/image4.png";
+import Logo from "./Logo.avif";
+import Plan from "./Plan.svg";
 import Potential from "./Potential.svg";
 import PotentialBG from "./PotentialBG.svg";
-import FooterLogo from "./FooterLogo.svg";
-import HeroArrow from "./HeroArrow.svg";
-import Amplificable from "./Amplificable.png";
-import Logo from "./Logo.avif";
+import PoweringImage from "./PoweringImage.webp";
+import RealEstate from "./Industries/RealEstate.webp";
+import SupplyChain from "./Industries/SupplyChain.avif";
+import Time from "./Time.svg";
 
-
-export {Logo,
+export {
+  Adopt,
   Amplificable,
-  FooterLogo,
+  AmplificableFooter,
+  Atom,
+  BG1,
+  BG2,
   BGHexa,
-  hexaBG,
+  BlockchainAdoptionImage,
+  Blog1,
+  Blog2,
+  BlogsBG,
   companiesImage,
+  Discover,
+  Energy,
+  Finance,
+  FooterLogo,
+  GovSector,
+  Hand,
+  hexaBG,
+  HealthCare,
   heroImage,
+  HeroArrow,
   image1,
   image2,
   image3,
   image4,
-  BlockchainAdoptionImage,
-  Adopt,
-  Discover,
+  Logo,
   Plan,
-  Blog1,
-  Blog2,
-  BlogsBG,
-  Energy,
-  Finance,
-  GovSector,
-  HealthCare,
-  SupplyChain,
-  RealEstate,
+  Potential,
+  PotentialBG,
   PoweringImage,
-  AmplificableFooter,
-  BG1,
-  BG2,
+  RealEstate,
+  SupplyChain,
   Time,
-  Atom,
-  Hand,
-  Potential,PotentialBG,HeroArrow
 };
