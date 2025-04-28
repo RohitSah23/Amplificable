@@ -35,7 +35,6 @@ import Time from "./Time.svg";
 export {
   Adopt,
   Amplificable,
-  AmplificableFooter,
   Atom,
   BG1,
   BG2,
