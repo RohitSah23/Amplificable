@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
-import { BG2 ,heroImage,HeroArrow} from "../../assets/assets";
+import { BG2, heroImage, HeroArrow } from "../../assets/assets";
+import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   return (
@@ -8,20 +9,23 @@ const Hero = () => {
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url("${BG2}")`, 
+          backgroundImage: `url("${BG2}")`,
         }}
       ></div>
-
+      <div className="relative z-20">
+        <Navbar />
+      </div>
       <div className="relative z-10 px-6 md:px-12 lg:px-40 flex flex-col md:flex-row items-center justify-between min-h-screen">
         <div className="w-full md:w-1/2 p-4">
           <div className="font-bold mb-4 uppercase rounded-full text-white flex items-center px-3 py-1 text-xs md:text-sm lg:text-base cursor-pointer hover:text-amber-600 transition duration-300">
             Tailored Blockchain and Outsourcing Solutions
-            <img src={HeroArrow}  className="ml-2" />
+            <img src={HeroArrow} className="ml-2" />
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-7xl mb-4 text-white leading-tight">
             Unlock The Power Of Blockchain
             <span className="block md:inline font-bold">
-              {" "}– Without The Complexity
+              {" "}
+              – Without The Complexity
             </span>
           </h1>
           <p className="text-sm md:text-base lg:text-lg mb-4 text-gray-300">

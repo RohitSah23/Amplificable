@@ -31,8 +31,10 @@ import PotentialBG from "./PotentialBG.svg";
 import FooterLogo from "./FooterLogo.svg";
 import HeroArrow from "./HeroArrow.svg";
 import Amplificable from "./Amplificable.png";
+import Logo from "./Logo.avif";
 
-export {
+
+export {Logo,
   Amplificable,
   FooterLogo,
   BGHexa,
