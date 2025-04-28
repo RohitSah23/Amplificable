@@ -1,6 +1,6 @@
 const Card = ({ image, heading, text,className }) => {
     return (
-      <div className="flex flex-col  border  p-6 rounded-lg shadow-lg h-full bg-gradient-to-br from-black via-amber-900%  to-amber-700 ">
+      <div className="flex flex-col  border  p-6 rounded-lg shadow-lg h-full bg-gradient-to-br from-orange-500/5  to-orange-300/5">
         <img
           src={image}
           alt={image}

@@ -4,7 +4,7 @@ import companiesImage from "../../assets/companiesImage.webp"
 const Companies = () => {
   return (
     <>
-      <div className="bg-gray-200 py-24">
+      <div className="bg-neutral-100 py-24 h-96">
         <h1 className="text-center text-gray-800 text-xl md:text-2xl font-semibold mb-8">
           Helping to grow the next generation of companies
         </h1>

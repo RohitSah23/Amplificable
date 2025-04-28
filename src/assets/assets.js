@@ -6,9 +6,9 @@ import image3 from "./WhyChooseBlockchain/image3.avif";
 import image4 from "./WhyChooseBlockchain/image4.png";
 import image2 from "./WhyChooseBlockchain/image2.png";
 import BlockchainAdoptionImage from "./BlockchainAdoption.png";
-import Offer1 from "./WhatWeOffer/Offer1.png";
-import Offer2 from "./WhatWeOffer/Offer2.png";
-import Offer3 from "./WhatWeOffer/Offer3.png";
+import Plan from "./Plan.svg";
+import Adopt from "./Adopt.svg";
+import Discover from "./Discover.svg";
 import Energy from "./Industries/Energy.webp";
 import Finance from "./Industries/Finance.avif";
 import GovSector from "./Industries/GovSector.webp";
@@ -20,9 +20,9 @@ import AmplificableFooter from "./AmplificableFooter.avif";
 import Blog1 from "./Blogs/Blog1.avif";
 import Blog2 from "./Blogs/Blog2.avif";
 import BlogsBG from "./Blogs/BlogsBG.svg";
-import BG1 from "./BG1.svg"
-import BG2 from "./BG2.svg"
-import BGHexa from "./BGHexa.svg"
+import BG1 from "./BG1.svg";
+import BG2 from "./BG2.svg";
+import BGHexa from "./BGHexa.svg";
 
 export {
   BGHexa,
@@ -34,9 +34,9 @@ export {
   image3,
   image4,
   BlockchainAdoptionImage,
-  Offer1,
-  Offer2,
-  Offer3,
+  Adopt,
+  Discover,
+  Plan,
   Blog1,
   Blog2,
   BlogsBG,
@@ -47,5 +47,7 @@ export {
   SupplyChain,
   RealEstate,
   PoweringImage,
-  AmplificableFooter,BG1,BG2
+  AmplificableFooter,
+  BG1,
+  BG2,
 };

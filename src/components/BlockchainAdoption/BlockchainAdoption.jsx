@@ -15,7 +15,7 @@ const BlockchainAdoption = () => {
 
         <div className="flex justify-center gap-4 mt-8 mb-6">
           <Button text="Learn How We Help" className="text-white" />
-          <Button text="Book A Call" className="bg-white text-black hover:bg-gray-100 border border-gray-300" />
+          <Button text="Book A Quick Call" className="bg-white text-black hover:bg-gray-100 border border-gray-300" />
           </div>
         <div className="flex justify-center pt-8">
           <img
