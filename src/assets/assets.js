@@ -19,6 +19,7 @@ import PoweringImage from "./PoweringImage.webp";
 import AmplificableFooter from "./AmplificableFooter.avif";
 import Blog1 from "./Blogs/Blog1.avif";
 import Blog2 from "./Blogs/Blog2.avif";
+import BlogsBG from "./Blogs/BlogsBG.svg";
 
 export {
   hexaBG,
@@ -34,6 +35,7 @@ export {
   Offer3,
   Blog1,
   Blog2,
+  BlogsBG,
   Energy,
   Finance,
   GovSector,
