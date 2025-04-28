@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import { ChevronRight } from "lucide-react";
-import { BG2 ,heroImage} from "../../assets/assets";
+import { BG2 ,heroImage,HeroArrow} from "../../assets/assets";
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
         <div className="w-full md:w-1/2 p-4">
           <div className="font-bold mb-4 uppercase rounded-full text-white flex items-center px-3 py-1 text-xs md:text-sm lg:text-base cursor-pointer hover:text-amber-600 transition duration-300">
             Tailored Blockchain and Outsourcing Solutions
-            <ChevronRight size={16} className="ml-2" />
+            <img src={HeroArrow}  className="ml-2" />
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-7xl mb-4 text-white leading-tight">
             Unlock The Power Of Blockchain

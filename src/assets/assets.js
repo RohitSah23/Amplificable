@@ -29,6 +29,7 @@ import BGHexa from "./BGHexa.svg";
 import Potential from "./Potential.svg";
 import PotentialBG from "./PotentialBG.svg";
 import FooterLogo from "./FooterLogo.svg";
+import HeroArrow from "./HeroArrow.svg";
 import Amplificable from "./Amplificable.png";
 
 export {
@@ -62,5 +63,5 @@ export {
   Time,
   Atom,
   Hand,
-  Potential,PotentialBG
+  Potential,PotentialBG,HeroArrow
 };
