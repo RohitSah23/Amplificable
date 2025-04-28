@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import Card from "../WhatWeOffer/Card";
-import { BG2, Time, Atom, Hand } from "../../assets/assets";
+import { BG2, Time, Atom, Hand,heroImage } from "../../assets/assets";
 
 const WhyAmplificable = () => {
   const reasons = [
@@ -59,9 +58,9 @@ const WhyAmplificable = () => {
         </div>
         <div className="right flex-1 flex justify-center items-center">
           <img
-            src={Hand}
+            src={heroImage}
             alt="Consulting"
-            className="h-64 w-64 object-contain rounded-full shadow-lg"
+            className=" object-fill"
           />
         </div>
       </div>

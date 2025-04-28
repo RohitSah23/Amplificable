@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import { ChevronRight } from "lucide-react";
-import { BG2 } from "../../assets/assets";
-import heroImage from "../../assets/heroImage.avif";
+import { BG2 ,heroImage} from "../../assets/assets";
 
 const Hero = () => {
   return (
