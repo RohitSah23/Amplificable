@@ -16,15 +16,15 @@ const Blogs = () => {
   ];
 
   return (
-    <>
-      <div
-        className="h-152 px-6 md:px-12 lg:px-40 py-16 text-center"
-        style={{
-          backgroundImage: `url(${BlogsBG})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+    <div
+      className="py-16 text-center"
+      style={{
+        backgroundImage: `url(${BlogsBG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12">
         <h1 className="text-neutral-500 text-3xl mb-8">Latest Blogs</h1>
         <div className="text-5xl font-semibold mb-12 text-gray-800">
           Insights from Amplificable
@@ -54,7 +54,7 @@ const Blogs = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
