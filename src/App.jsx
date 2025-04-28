@@ -1,15 +1,14 @@
 import React from "react";
 import Hero from "./components/Hero/Hero";
 import Companies from "./components/Companies/Companies";
-import WhyBlockchain from "./components/WhyBlockchain/WhyBlockchain";
+import WhyChooseBlockchain from "./components/WhyChooseBlockchain/WhyChooseBlockchain";
 
 const App = () => {
   return (
     <>
-
       <Hero/>
       <Companies/>
-      <WhyBlockchain/>
+      <WhyChooseBlockchain/>
     </>
   );
 };
