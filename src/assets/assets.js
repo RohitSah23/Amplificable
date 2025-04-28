@@ -9,6 +9,16 @@ import BlockchainAdoptionImage from "./BlockchainAdoption.png";
 import Offer1 from "./WhatWeOffer/Offer1.png";
 import Offer2 from "./WhatWeOffer/Offer2.png";
 import Offer3 from "./WhatWeOffer/Offer3.png";
+import Energy from "./Industries/Energy.webp";
+import Finance from "./Industries/Finance.avif";
+import GovSector from "./Industries/GovSector.webp";
+import RealEstate from "./Industries/RealEstate.webp";
+import HealthCare from "./Industries/HealthCare.webp";
+import SupplyChain from "./Industries/SupplyChain.avif";
+import PoweringImage from "./PoweringImage.webp";
+import AmplificableFooter from "./AmplificableFooter.avif";
+import Blog1 from "./Blogs/Blog1.avif";
+import Blog2 from "./Blogs/Blog2.avif";
 
 export {
   hexaBG,
@@ -21,5 +31,15 @@ export {
   BlockchainAdoptionImage,
   Offer1,
   Offer2,
-  Offer3, 
+  Offer3,
+  Blog1,
+  Blog2,
+  Energy,
+  Finance,
+  GovSector,
+  HealthCare,
+  SupplyChain,
+  RealEstate,
+  PoweringImage,
+  AmplificableFooter,
 };
