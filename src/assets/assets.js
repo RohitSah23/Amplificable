@@ -26,6 +26,7 @@ import BlogsBG from "./Blogs/BlogsBG.svg";
 import BG1 from "./BG1.svg";
 import BG2 from "./BG2.svg";
 import BGHexa from "./BGHexa.svg";
+import Potential from "./Potential.svg";
 
 export {
   BGHexa,
@@ -56,4 +57,5 @@ export {
   Time,
   Atom,
   Hand,
+  Potential
 };
