@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button"
 import { ChevronRight } from "lucide-react";
 
 import heroImage from "../../assets/heroImage.avif";
@@ -25,9 +26,7 @@ const Hero = () => {
             and quickly, along with expert outsourcing services to scale your
             business faster and smarter.
           </p>
-          <button className="bg-amber-500 text-lg md:text-base lg:text-lg text-white px-6 py-3 rounded-full hover:bg-amber-600 transition duration-300">
-            Learn How We Help
-          </button>
+          <Button text="Learn How We Help" /> 
         </div>
 
         <div className="w-full md:w-1/2 p-4">
