@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
 
-import heroside from "../../assets/heroPic.avif";
+import heroImage from "../../assets/heroImage.avif";
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
 
         <div className="w-full md:w-1/2 p-4">
-          <img src={heroside} alt="Hero" className="w-full h-auto" />
+          <img src={heroImage} alt="heroImage" className="w-full h-auto" />
         </div>
       </div>
     </div>
