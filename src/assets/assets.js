@@ -20,6 +20,8 @@ import AmplificableFooter from "./AmplificableFooter.avif";
 import Blog1 from "./Blogs/Blog1.avif";
 import Blog2 from "./Blogs/Blog2.avif";
 import BlogsBG from "./Blogs/BlogsBG.svg";
+import BG1 from "./BG1.svg"
+import BG2 from "./BG2.svg"
 
 export {
   hexaBG,
@@ -43,5 +45,5 @@ export {
   SupplyChain,
   RealEstate,
   PoweringImage,
-  AmplificableFooter,
+  AmplificableFooter,BG1,BG2
 };
