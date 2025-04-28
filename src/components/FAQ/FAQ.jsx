@@ -43,7 +43,6 @@ const FAQ = () => {
   return (
     <div className="bg-white  flex items-center py-20">
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row px-6 md:px-12 gap-12">
-        {/* Left side */}
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -58,7 +57,6 @@ const FAQ = () => {
           </p>
         </motion.div>
 
-        {/* Right side */}
         <div className="flex-1 flex flex-col gap-4">
           {faqs.map((faq, index) => (
             <motion.div
