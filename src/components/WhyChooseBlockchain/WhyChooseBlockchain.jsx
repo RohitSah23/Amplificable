@@ -1,15 +1,13 @@
 import React from "react";
 import Card from "./Card";
-import { image1, image2, image3, image4, hexaBG } from "../../assets/assets";
+import { image1, image2, image3, image4, BGHexa } from "../../assets/assets";
 
 const WhyChooseBlockchain = () => {
   return (
     <div
-      className="min-h-screen px-40 flex items-center justify-center bg-gray-100 "
+      className="min-h-screen px-40  flex items-center justify-center  "
       style={{
-        backgroundImage: `url(${hexaBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundImage: `url("${BGHexa}")`,
       }}
     >
       <div className="max-w-6xl mb-2">

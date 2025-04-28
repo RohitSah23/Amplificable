@@ -22,8 +22,10 @@ import Blog2 from "./Blogs/Blog2.avif";
 import BlogsBG from "./Blogs/BlogsBG.svg";
 import BG1 from "./BG1.svg"
 import BG2 from "./BG2.svg"
+import BGHexa from "./BGHexa.svg"
 
 export {
+  BGHexa,
   hexaBG,
   companiesImage,
   heroImage,
