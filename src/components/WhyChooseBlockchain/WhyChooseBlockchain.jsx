@@ -1,5 +1,6 @@
 import React from "react";
-import { image1, image3, image4, hexaBG } from "../../assets/assets";
+import Card from "./Card";
+import { image1, image2, image3, image4, hexaBG } from "../../assets/assets";
 
 const WhyChooseBlockchain = () => {
   return (
@@ -15,7 +16,7 @@ const WhyChooseBlockchain = () => {
         <div className="text-2xl font-semibold text-center pt-8 mb-4 text-gray-800">
           Why Choose Blockchain?
         </div>
-        <div className="text-4xl text-center font-semibold text-gray-400 mb-12">
+        <div className="text-4xl text-center font-semibold text-neutral-400 mb-12">
           Overcome Blockchain Adoption Challenges
         </div>
 
@@ -25,11 +26,10 @@ const WhyChooseBlockchain = () => {
             text="Integration challenges with existing systems"
           />
           <Card
-            image={image1}
+            image={image2}
             text="Difficulty in identifying suitable use cases"
           />
 
-          {/* Card 3 with heading, spanning 2 rows */}
           <div className="row-span-2 ">
             <Card
               image={image3}
@@ -38,7 +38,6 @@ const WhyChooseBlockchain = () => {
             />
           </div>
 
-          {/* Card 4 with heading */}
           <div className="col-span-2">
             <Card
               image={image4}
@@ -48,20 +47,6 @@ const WhyChooseBlockchain = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-const Card = ({ image, heading, text }) => {
-  return (
-    <div className="flex flex-col bg-white p-6 rounded-lg shadow-lg h-full">
-      <img
-        src={image}
-        alt={image}
-        className="h-full object-contain rounded-lg "
-      />
-      {heading && <h3 className="text-xl font-semibold mb-2 text-gray-700">{heading}</h3>}
-      <p className="text-gray-600">{text}</p>
     </div>
   );
 };
