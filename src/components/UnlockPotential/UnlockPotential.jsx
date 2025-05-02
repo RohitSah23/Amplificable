@@ -18,7 +18,7 @@ const UnlockPotential = () => {
           viewport={{ once: false, amount: 0.4 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl  mb-4">
             Unlock the Potential of
           </h1>
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
