@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Logo } from "../../assets/assets";
 import Button from "../Button/Button";
+import { motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -32,7 +33,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="md:w-3xl md:mx-auto mt-6 md:mt-8 mx-2 bg-white/4 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full">
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="md:w-3xl md:mx-auto mt-6 md:mt-8 mx-2 bg-white/4 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full"
+      >
         <nav className="flex items-center justify-between">
           <div className="flex items-center w-full justify-between">
             <img
@@ -50,7 +57,10 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button text="Book A Call" className="text-white cursor-pointer" />
+              <Button
+                text="Book A Call"
+                className="text-white cursor-pointer"
+              />
             </div>
             <div className="md:hidden flex items-center">
               <button
@@ -66,10 +76,15 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </div>
+      </motion.div>
 
       {isMobileMenuOpen && (
-        <div
+        <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      
           ref={menuRef}
           className="md:hidden flex flex-col items-center space-y-6 py-6 mt-2 bg-white/5 backdrop-blur-2xl border border-black mx-4 px-6 shadow-md rounded-xl"
         >
@@ -83,7 +98,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button text="Book A Call" className="text-white cursor-pointer" />
-        </div>
+        </motion.div>
       )}
     </>
   );

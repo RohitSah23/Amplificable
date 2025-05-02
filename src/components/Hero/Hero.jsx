@@ -6,53 +6,74 @@ import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="relative w-full overflow-hidden">
-
+    <div className="relative w-full overflow-hidden lg:min-h-screen">
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url("${BG2}")`,
-        }}
-      ></div>
-
-      <div className="relative z-20 ">
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: `url("${BG2}")` }}
+      />
+      <div className="relative z-20">
         <Navbar />
       </div>
-
       <motion.div
-        className="relative z-10 px-6 md:px-12 lg:px-40 flex flex-col md:flex-row items-center justify-between "
-        initial={{ scale: 0.5, opacity: 0 }}
+        className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-16 py-12 flex flex-col md:flex-row items-center gap-8 pt-10"
+        initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
-        viewport={{ once: false, amount: 0.4 }} 
+        viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-
-        <div className="w-full md:w-1/2 p-4">
-          <div className="font-bold mb-4 uppercase rounded-full text-white flex items-center px-3 py-1 text-xs md:text-sm lg:text-base cursor-pointer hover:text-amber-600 transition duration-300">
+        <div className="flex-1 space-y-6 text-center md:text-left lg:text-left lg:pt-14">
+          <motion.div
+            className="inline-flex items-center uppercase text-white border border-black bg-white/5 backdrop-blur px-3 py-1 rounded-full text-xs lg:text-base sm:text-sm md:text-xs "
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             Tailored Blockchain and Outsourcing Solutions
-            <img src={HeroArrow} className="ml-2" alt="Hero Arrow" />
-          </div>
-          <h1 className="text-3xl md:text-5xl lg:text-7xl mb-4 text-white leading-tight">
+            <img
+              src={HeroArrow}
+              alt="→"
+              className="ml-2 w-4 h-4 sm:w-5 sm:h-5"
+            />
+          </motion.div>
+          <motion.h1
+            className="text-white font-semibold leading-tight"
+            style={{ fontSize: "clamp(2rem, 6vw, 4rem)" }}
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             Unlock The Power Of Blockchain
-            <span className="block md:inline font-bold">
-              {" "}
-              – Without The Complexity
-            </span>
-          </h1>
-          <p className="text-sm md:text-base lg:text-lg mb-4 text-gray-300">
-            With Amplificable, you can integrate blockchain solutions seamlessly
-            and quickly, along with expert outsourcing services to scale your
-            business faster and smarter.
-          </p>
-          <Button text="Learn How We Help" className="text-white" />
+            <span className="block font-black">– Without The Complexity</span>
+          </motion.h1>
+          <motion.p
+            className="text-neutral-300"
+            style={{ fontSize: "clamp(1rem,3vw,1.25rem)" }}
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            With Amplificable, integrate blockchain seamlessly and scale smarter
+            with expert outsourcing services.
+          </motion.p>
+          <Button text="Learn How We Help" className="text-white lg:my-4" />
         </div>
-       
-        <div className="w-full md:w-1/2 p-4">
-          <img src={heroImage} alt="heroImage" className="w-full h-auto" />
-        </div>
-
+        <motion.div
+          className="flex-1 flex justify-center lg:justify-end"
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <img
+            src={heroImage}
+            alt="Blockchain integration illustration"
+            className="w-full lg:h-180 md:h-120 h-100 md:max-w-lg lg:max-w-2xl object-cover"
+          />
+        </motion.div>
       </motion.div>
-
     </div>
   );
 };
