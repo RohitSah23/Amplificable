@@ -11,7 +11,7 @@ const UnlockPotential = () => {
         style={{ backgroundImage: `url("${PotentialBG}")` }}
       ></div>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 sm:px-6 lg:px-8">
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
