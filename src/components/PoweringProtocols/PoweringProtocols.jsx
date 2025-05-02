@@ -15,7 +15,7 @@ const PoweringProtocols = () => {
           <h1 className="text-center text-neutral-300 text-2xl sm:text-3xl md:text-4xl font-semibold mb-4">
             Blockchain Protocols Supported
           </h1>
-          <div className="text-4xl sm:text-5xl md:text-6xl text-center mb-12 text-white">
+          <div className="text-2xl sm:text-2xl md:text-4xl lg:text-6xl text-center mb-12 text-white">
             Powering 40+ Blockchain Protocols
           </div>
         </motion.div>
