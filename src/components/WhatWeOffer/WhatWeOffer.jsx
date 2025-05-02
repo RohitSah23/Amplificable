@@ -26,7 +26,7 @@ const WhatWeOffer = () => {
 
   return (
     <>
-      <div className="relative min-h-screen w-full overflow-hidden">
+      <div className="relative h-full w-full overflow-hidden">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
           style={{ backgroundImage: `url("${BG2}")` }}

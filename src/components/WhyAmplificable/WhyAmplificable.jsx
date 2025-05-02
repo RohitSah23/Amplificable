@@ -21,7 +21,7 @@ const WhyAmplificable = () => {
   ];
 
   return (
-    <div className="relative w-full px-40 min-h-screen h-full overflow-hidden">
+    <div className="relative w-full px-40 h-full ">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url("${BG2}")` }}

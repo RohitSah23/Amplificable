@@ -6,7 +6,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden">
 
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="relative z-10 px-6 md:px-12 lg:px-40 flex flex-col md:flex-row items-center justify-between min-h-screen"
+        className="relative z-10 px-6 md:px-12 lg:px-40 flex flex-col md:flex-row items-center justify-between "
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false, amount: 0.4 }} 

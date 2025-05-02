@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const WhyChooseBlockchain = () => {
   return (
     <div
-      className="min-h-screen px-6 md:px-12 lg:px-40 flex items-center justify-center"
+      className="h-full px-6 md:px-12 lg:px-40 md:pb-10 pb-4 flex items-center justify-center"
       style={{
         backgroundImage: `url("${BGHexa}")`,
       }}
