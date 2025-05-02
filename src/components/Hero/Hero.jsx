@@ -15,7 +15,7 @@ const Hero = () => {
         }}
       ></div>
 
-      <div className="relative z-20">
+      <div className="relative z-20 ">
         <Navbar />
       </div>
 
