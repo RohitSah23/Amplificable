@@ -61,7 +61,7 @@ const WhatWeOffer = () => {
             Consulting Services
           </motion.div>
 
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 ">
             {cardsData.map((card, index) => (
               <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
@@ -69,12 +69,14 @@ const WhatWeOffer = () => {
                 viewport={{ once: false, amount: 0.4 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 key={index}
-                className="flex flex-col flex-grow basis-full md:basis-[30%] max-w-sm"
+                className="flex flex-col flex-grow basis-full md:basis-[30%] max-w-sm  hover:shadow-xl transition-transform hover:-translate-y-1
+                  "
               >
                 <Card
                   image={card.image}
                   heading={card.heading}
                   text={card.text}
+             
                 />
               </motion.div>
             ))}
