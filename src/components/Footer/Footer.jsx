@@ -6,70 +6,51 @@ import { FooterLogo, Amplificable } from "../../assets/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black pt-10">
+    <footer className="bg-white text-black pt-10 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false, amount: 0.4 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-7xl mx-auto  flex flex-col md:flex-row justify-between items-center mb-8"
+        className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 mb-8"
       >
         <img
           src={FooterLogo}
           alt="Footer Logo"
-          className="w-40 h-40 object-contain"
+          className="w-28 h-28 sm:w-32 sm:h-32 object-contain"
         />
-        <div className="flex items-center text-sm font-medium mt-4 md:mt-0">
+        <div className="flex items-center text-sm sm:text-base font-medium">
           <span className="text-xl mr-2">
             <MapPin />
-          </span>{" "}
+          </span>
           USA, INDIA
         </div>
       </motion.div>
 
-      <hr className="border-t border-gray-300 mb-12 " />
+      <hr className="border-t border-gray-300 mb-12" />
 
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false, amount: 0.4 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-7xl mx-auto  flex flex-col md:flex-row items-center justify-between mb-8 mt-4"
+        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 mb-8 mt-4"
       >
-        <div className="flex justify-between space-x-6 text-center md:text-left ">
-          <a
-            href="#"
-            className="text-black text-2xl p hover:text-gray-600 transition"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-black text-2xl hover:text-gray-600 transition"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-black text-2xl hover:text-gray-600 transition"
-          >
-            Services
-          </a>
-          <a
-            href="#"
-            className="text-black text-2xl hover:text-gray-600 transition"
-          >
-            Case Studies
-          </a>
-          <a
-            href="#"
-            className="text-black text-2xl hover:text-gray-600 transition"
-          >
-            Contact Us
-          </a>
+        <div className="flex flex-wrap justify-center md:justify-start gap-4 text-center md:text-left">
+          {["Home", "About", "Services", "Case Studies", "Contact Us"].map(
+            (link, i) => (
+              <a
+                key={i}
+                href="#"
+                className="text-black text-base sm:text-lg md:text-xl hover:text-gray-600 transition"
+              >
+                {link}
+              </a>
+            )
+          )}
         </div>
 
-        <div className="text-center md:text-right text-black text-xl">
+        <div className="text-center md:text-right text-sm sm:text-base md:text-lg text-black">
           © Copyright 2025. All rights reserved.
         </div>
       </motion.div>
@@ -78,7 +59,7 @@ const Footer = () => {
         <img
           src={Amplificable}
           alt="Amplificable Logo"
-          className="h-128 w-auto object-cover"
+          className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
         />
       </div>
     </footer>
