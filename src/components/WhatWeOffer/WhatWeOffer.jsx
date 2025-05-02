@@ -69,7 +69,7 @@ const WhatWeOffer = () => {
                 viewport={{ once: false, amount: 0.4 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 key={index}
-                className="flex flex-col flex-grow basis-full md:basis-[30%] max-w-sm  hover:shadow-xl transition-transform hover:-translate-y-1
+                className="flex flex-col flex-grow basis-full md:basis-[45%] max-w-sm  hover:shadow-xl transition-transform hover:-translate-y-1
                   "
               >
                 <Card

@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="md:w-3xl md:mx-auto mt-6 md:mt-8 mx-2 bg-white/5 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full">
+      <div className="md:w-3xl md:mx-auto mt-6 md:mt-8 mx-2 bg-white/4 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full">
         <nav className="flex items-center justify-between">
           <div className="flex items-center w-full justify-between">
             <img
