@@ -49,7 +49,7 @@ const Blogs = () => {
               viewport={{ once: false, amount: 0.4 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               key={index}
-              className="flex flex-col items-center bg-neutral-200 h-72 rounded-lg shadow-lg p-6 basis-[90%] md:basis-[45%] max-w-md"
+              className="flex flex-col items-center bg-neutral-200 lg:h-72 h-full rounded-lg shadow-lg p-6 basis-[90%] md:basis-[45%] max-w-md"
             >
               <div className="flex items-center mb-4">
                 <img

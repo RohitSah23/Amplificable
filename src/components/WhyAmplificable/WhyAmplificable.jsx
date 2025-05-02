@@ -67,7 +67,7 @@ const WhyAmplificable = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: false, amount: 0.4 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex gap-4 mt-4 pb-20"
+            className="flex gap-4 mt-4 pb-20 flex-col "
           >
             <Button text="Learn How We Help" className="text-white" />
             <Button
