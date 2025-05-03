@@ -79,7 +79,7 @@ const WhyAmplificable = () => {
           </div>
 
           <motion.div
-            className="flex-1"
+            className="flex-1 hidden lg:block"
             initial={{ scale: 0.5, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: false, amount: 0.4 }}
@@ -88,7 +88,7 @@ const WhyAmplificable = () => {
             <img
               src={heroImage}
               alt="Consulting"
-              className="w-full h-auto max-h-[32rem] object-cover rounded-lg"
+              className="w-full hidden lg:block h-auto max-h-[32rem] object-cover rounded-lg"
             />
           </motion.div>
         </div>

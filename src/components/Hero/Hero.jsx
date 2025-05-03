@@ -33,7 +33,7 @@ const Hero = () => {
             <img
               src={HeroArrow}
               alt="→"
-              className="ml-2 w-4 h-4 sm:w-5 sm:h-5"
+              className="ml-2 w-3 h-3 sm:w-5 sm:h-5"
             />
           </motion.div>
           <motion.h1
