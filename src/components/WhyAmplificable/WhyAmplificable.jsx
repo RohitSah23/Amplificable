@@ -63,20 +63,19 @@ const WhyAmplificable = () => {
                 </p>
               </motion.div>
             ))}
-
-            <motion.div
-              initial={{ scale: 0.5, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: false, amount: 0.4 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
-            >
-              <Button text="Learn How We Help" className="text-white w-48" />
-              <Button
-                text="Book A Quick Call"
-                className="bg-white text-black hover:bg-gray-100 border border-gray-300 w-48"
-              />
-            </motion.div>
+  <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: false, amount: 0.4 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex justify-center gap-4 mt-12 flex-col md:flex-row"
+          >
+            <Button text="Learn How We Help" className="text-white" />
+            <Button
+              text="Book A Quick Call"
+              className="bg-white text-black hover:bg-gray-100 border border-gray-300"
+            />
+          </motion.div>
           </div>
 
           <motion.div
