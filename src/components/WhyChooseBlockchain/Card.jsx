@@ -6,8 +6,8 @@ const Card = ({ image, heading, text,className }) => {
           alt={image}
           className={`h-full object-contain rounded-lg ${className}`}
         />
-        {heading && <h3 className="text-xl font-semibold mb-2 text-gray-700">{heading}</h3>}
-        <p className="text-gray-600">{text}</p>
+        {heading && <h3 className="mb-2  text-xl md:text-3xl font-semibold text-gray-700">{heading}</h3>}
+        <p className="text-gray-600  text-base md:text-2xl  leading-snug break-words">{text}</p>
       </div>
     );
   };

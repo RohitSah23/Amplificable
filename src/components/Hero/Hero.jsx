@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <div className="flex-1 space-y-6 text-center md:text-left lg:text-left lg:pt-14">
           <motion.div
-            className="inline-flex items-center uppercase text-white border border-black bg-white/5 backdrop-blur px-3 py-1 rounded-full text-xs lg:text-base sm:text-sm md:text-xs "
+            className="inline-flex items-center uppercase text-white border border-black bg-white/5 backdrop-blur px-3 py-1 rounded-full text-[10px] lg:text-base sm:text-sm md:text-xs "
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: false, amount: 0.3 }}
