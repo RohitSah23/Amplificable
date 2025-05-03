@@ -6,16 +6,16 @@ import { motion } from "motion/react";
 const WhyChooseBlockchain = () => {
   return (
     <div
-      className="h-full px-6 md:px-12 lg:px-40 md:pb-10 pb-4 flex items-center justify-center"
+      className="h-full px-6 md:px-12 lg:px-40 md:pb-10 pb- flex items-center justify-center"
       style={{
         backgroundImage: `url("${BGHexa}")`,
       }}
     >
       <div className="max-w-6xl w-full mb-2">
-        <div className="text-2xl font-semibold text-center pt-8 mb-4 text-gray-800">
+        <div className="text-xl md:text-2xl lg:text-3xl font-semibold text-center pt-8 mb-4 text-gray-800">
           Why Choose Blockchain?
         </div>
-        <div className="text-4xl text-center font-semibold text-neutral-400 mb-12">
+        <div className="text-2xl text-center font-semibold text-neutral-400 mb-12 md:text-4xl lg:text-5xl" >
           Overcome Blockchain Adoption Challenges
         </div>
 
