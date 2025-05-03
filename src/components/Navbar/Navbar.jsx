@@ -38,7 +38,7 @@ const Navbar = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="md:w-3xl md:mx-auto mt-6 md:mt-8 mx-2 bg-white/4 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full"
+        className="md:w-3xl md:mx-auto mt-4 md:mt-8 mx-2 bg-white/4 transition-all duration-300 backdrop-blur-2xl border border-black py-4 px-6 shadow-md rounded-full"
       >
         <nav className="flex items-center justify-between">
           <div className="flex items-center w-full justify-between">
