@@ -34,38 +34,46 @@ const Blogs = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: false, amount: 0.4 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-xl md:text-2xl lg:text-3xl font-semibold text-center pt-8 mb-4 text-gray-800"
         >
-          <h1 className="text-neutral-500 text-3xl mb-8">Latest Blogs</h1>
-          <div className="text-5xl font-semibold mb-12 text-gray-800">
-            Insights from Amplificable
-          </div>
+          Latest Blogs{" "}
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: false, amount: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-2xl text-center font-semibold text-neutral-400 mb-12 md:text-4xl lg:text-5xl"
+        >
+          Insights from Amplificable
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-8">
           {blogData.map((blog, index) => (
             <motion.div
-              initial={{ scale: 0.5, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: false, amount: 0.4 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              key={index}
-              className="flex flex-col items-center bg-neutral-200 lg:h-72 h-full rounded-lg shadow-lg p-6 basis-[90%] md:basis-[45%] max-w-md"
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src={blog.image}
-                  alt={`Blog ${index + 1}`}
-                  className="h-24 w-24 object-cover rounded-lg shadow-md mr-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800 text-left">
-                  {blog.title}
-                </h3>
-              </div>
-
-              <p className="text-gray-600 font-semibold text-left">
-                {blog.summary}
-              </p>
-            </motion.div>
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: false, amount: 0.4 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            key={index}
+            className="flex flex-col items-center bg-neutral-200 lg:h-72 h-full rounded-lg shadow-lg p-6 basis-[90%] md:basis-[45%] max-w-md"
+          >
+            <div className="flex flex-col md:flex-row items-center w-full mb-4">
+              <img
+                src={blog.image}
+                alt={`Blog ${index + 1}`}
+                className="h-full w-full md:h-24 md:w-24 object-cover rounded-lg shadow-md mb-4 md:mb-0 md:mr-4"
+              />
+              <h3 className="text-lg font-semibold text-gray-800 text-left w-full">
+                {blog.title}
+              </h3>
+            </div>
+          
+            <p className="text-gray-600 font-semibold text-left w-full">
+              {blog.summary}
+            </p>
+          </motion.div>
+          
           ))}
         </div>
       </div>
