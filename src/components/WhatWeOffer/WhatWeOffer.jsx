@@ -86,7 +86,7 @@ const WhatWeOffer = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: false, amount: 0.4 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex justify-center gap-4 mt-12 flex-col md:flex-row"
+            className="flex justify-center items-center gap-4 mt-12 flex-col md:flex-row"
           >
             <Button text="Learn How We Help" className="text-white" />
             <Button
