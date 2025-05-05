@@ -42,11 +42,13 @@ const Navbar = () => {
       >
         <nav className="flex items-center justify-between">
           <div className="flex items-center w-full justify-between">
+            <a href="/">
             <img
               src={Logo}
               alt="Amplificable Logo"
               className="w-32 h-auto object-contain"
             />
+            </a>
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <a

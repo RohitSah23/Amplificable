@@ -47,7 +47,7 @@ const WhyAmplificable = () => {
             {reasons.map((reason, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col md:flex-row items-center md:items-start gap-4"
+                className="flex flex-col md:flex-row items-center gap-4"
                 initial={{ scale: 0.5, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 viewport={{ once: false, amount: 0.4 }}
